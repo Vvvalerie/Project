@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tir</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="first-run">
+        <marquee onmouseover=this.stop() onmouseout=this.start() loop="-1" bebehavior="scroll" scrollamount="24" class="first-run__top-text">
+            Ночь медитаций в центре OmWave. Ночь медитаций в центре OmWave. Ночь медитаций в центре OmWave.
+        </marquee>
+        <h1 class="first-run__heading">
+            Лопни пузырь <br>
+            и попробуй выиграть
+            бесплатный билет
+        </h1>
+        <button class="first-run__btn">
+            
+        </button>
+        <a href="./guess/guess.html" class="guess_link"><button class="first-run__btn2">
+            
+        </button></a>
+    </div>
+    <div class="win hidden">
+        <p class="win__text">
+            Молодец, снайпер! Продолжим?
+        </p>
+        <button class="win__btn">
+            Продолжить
+        </button>
+    </div>
+    <div class="lose hidden">
+        <p class="lose__text">
+            Ты проиграл,
+            попробуй ещё раз!
+        </p>
+        <button class="lose__btn">
+            Заново
+        </button>
+    </div>
+    <div class="scores">
+        <p class="scores-row">
+            SHOT: <span class="scores__shots">0</span>
+        </p>
+        <p class="scores-row">
+            SCORE: <span class="scores__goals">0</span>
+        </p>
+    </div>
+
+    <div class="first-round">
+        <div class="first-round__cols">
+                <a class="main__page" href="./index.html">На главную</a>
+            <div class="target first-round__target"></div>
+            <div class="target first-round__target"></div>
+            <div class="target first-round__target"></div>
+            <div class="target first-round__target"></div>
+            <div class="target first-round__target"></div>
+            <div class="target first-round__target"></div>
+        </div>
+    </div>
+
+    <div class="second-round hidden">
+        <div class="second-round__rows">
+            <a class="main__page" href="./index.html">На главную</a>
+            <div class="target second-round__target"></div>
+            <div class="target second-round__target"></div>
+            <div class="target second-round__target"></div>
+            <div class="target second-round__target"></div>
+            <div class="target second-round__target"></div>
+        </div>
+    </div>
+
+    <div class="third-round hidden">
+        <a class="main__page" href="./index.html">На главную</a>
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

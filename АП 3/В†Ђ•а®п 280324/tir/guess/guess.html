@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <a class="main__page2" href="../index.html">На главную</a>
+    <div class="win-screen hidden">
+        <p class="win-screen__text">
+            Поздравляем! Ты победил! Еще разок?
+        </p>
+        <button class="win-screen__btn">
+            Еще раз!
+        </button>
+    </div>
+    <div class="lose-screen hidden">
+        <p class="lose-screen">
+            Ты проиграл! Попробуй еще разок! Все получится!
+        </p>
+        <button class="lose-screen__btn">
+            Еще раз!
+        </button>
+    </div>
+    <img src="./imgs/shadow-1.png" alt="Shadow 1" class="shadow-img">
+    <div class="menu">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./imgs/1.png" alt="1" data-id="0" class="menu__img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imgs/2.png" alt="1" data-id="1" class="menu__img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imgs/3.png" alt="1" data-id="2" class="menu__img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imgs/4.png" alt="1" data-id="3" class="menu__img">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./imgs/5.png" alt="1" data-id="4" class="menu__img">
+                </div>
+            </div>
+        </div>
+        <div class="swiper-info">
+            <div class="swiper-navigation">
+                <button class="swiper-left">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" fill="#9C9C9C" />
+                        <path
+                            d="M80.5 54C82.7091 54 84.5 52.2091 84.5 50C84.5 47.7909 82.7091 46 80.5 46V54ZM17.1716 47.1716C15.6095 48.7337 15.6095 51.2663 17.1716 52.8284L42.6274 78.2843C44.1895 79.8464 46.7222 79.8464 48.2843 78.2843C49.8464 76.7222 49.8464 74.1895 48.2843 72.6274L25.6569 50L48.2843 27.3726C49.8464 25.8105 49.8464 23.2778 48.2843 21.7157C46.7222 20.1536 44.1895 20.1536 42.6274 21.7157L17.1716 47.1716ZM80.5 46L20 46V54L80.5 54V46Z"
+                            fill="black" />
+                    </svg>
+                </button>
+                <button class="swiper-play">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" fill="#9C9C9C" />
+                        <rect x="32" y="32" width="35" height="35" fill="black" />
+                    </svg>
+                </button>
+                <button class="swiper-right">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" fill="#9C9C9C" />
+                        <path
+                            d="M20 46C17.7909 46 16 47.7909 16 50C16 52.2091 17.7909 54 20 54L20 46ZM83.3284 52.8284C84.8905 51.2663 84.8905 48.7337 83.3284 47.1716L57.8726 21.7157C56.3105 20.1536 53.7778 20.1536 52.2157 21.7157C50.6536 23.2778 50.6536 25.8105 52.2157 27.3726L74.8431 50L52.2157 72.6274C50.6536 74.1895 50.6536 76.7222 52.2157 78.2843C53.7778 79.8464 56.3105 79.8464 57.8726 78.2843L83.3284 52.8284ZM20 54L80.5 54L80.5 46L20 46L20 54Z"
+                            fill="black" />
+                    </svg>
+                </button>
+
+            </div>
+            <p class="menu__scores">
+                COUNTS: <span class="menu__scores-counts">0</span>
+            </p>
+            <p class="menu__scores">
+                SCORE: <span class="menu__scores-value">0</span>
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
